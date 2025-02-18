@@ -1,6 +1,6 @@
 {
-  "name": "react-native-print",
-  "version": "0.11.0",
+  "name": "@iftek/react-native-print",
+  "version": "0.12.0",
   "description": "Print documents with React Native",
   "main": "index.js",
   "types": "types/index.d.ts",
@@ -13,12 +13,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "github:christopherdro/react-native-print"
+    "url": "github:yuan9090/react-native-print"
   },
   "peerDependencies": {
-    "react-native": "*",
-    "react-native-windows": ">=0.62"
+    "react-native": "*"
   },
-  "author": "Christopher Dro <casheghian@gmail.com> (http://chris.si)",
+  "author": "yuan9090 <yuan9090@gmail.com>",
   "license": "MIT"
 }

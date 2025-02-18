@@ -1,10 +1,14 @@
-# react-native-print
+# @iftek/react-native-print
 
 Print documents using React Native.
 
+- Fork from [react-native-print](https://github.com/christopherdro/react-native-print)
+- update Android build.gradle safeExtGet, sdk 34
+- update peerDependencies
+
 ## Installation
 
-Run `npm install react-native-print --save`
+Run `npm install @iftek/react-native-print --save`
 
 ## Add it to your project
 
@@ -16,7 +20,7 @@ Run `react-native link`
 
 #### iOS
 1. Open your project in XCode, right click on [Libraries](http://url.brentvatne.ca/jQp8) and select [Add Files to "Your Project Name](http://url.brentvatne.ca/1gqUD).
-2. Choose the file `node_modules/react-native-print/RNPrint.xcodeproj`
+2. Choose the file `node_modules/@iftek/react-native-print/RNPrint.xcodeproj`
 3. Go to `Project Manager` tab and click on your project's name. Select the name of the target and click on `Build Phases`
 4. Add `libRNPrint.a` to `Link Binary With Libraries`
    [(Screenshot)](http://url.brentvatne.ca/17Xfe).
@@ -26,7 +30,7 @@ Run `react-native link`
 
 ```java
 include ':react-native-print'
-project(':react-native-print').projectDir = new File(rootProject.projectDir,'../node_modules/react-native-print/android')
+project(':react-native-print').projectDir = new File(rootProject.projectDir,'../node_modules/@iftek/react-native-print/android')
 ```
 
 - Edit `android/app/build.gradle` file to include
@@ -121,7 +125,7 @@ import {
 
 
 import RNHTMLtoPDF from 'react-native-html-to-pdf';
-import RNPrint from 'react-native-print';
+import RNPrint from '@iftek/react-native-print';
 
 export default class RNPrintExample extends Component {
   state = {
